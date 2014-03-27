@@ -1,0 +1,32 @@
+Stephen Bush -- Lab 2
+
+Q1:
+	Each player has an instance variable which keeps track of the move it selected the previous turn, which LastPlayBot can copy.
+
+Q2:
+	I created two extra bots, the first of which is a "cheater bot".  This bot yields selecting a move until its opponent selects a move, then reads that selection and counters with a move that will win.  
+	The second bot is a Learning Bot.  It keeps track of all of the opponents moves, as well as the moves of both players from the previous turn, in order to pick up on simple patterns and learn from them, and then counter them with winning plays.  It showed to be highly effective against all of Players (Except CheaterBot, RandomBot and itself).
+
+Q3:
+	It definitely seemed to use fairly weak typing.  Not sure about the Static vs Dynamic typing.  I assumed it was using static, but i never actually tested it either way.  The lack of issues leads me to believe it was probably static.
+
+Q4:
+	Most of the bots are easy to beat.  Having been programmed with specific parameters for selecting their moves, it is very easy to predict what they're going to pick next, and counter it almost all of the time.  The only truly un-predictable bot is the random bot. 
+
+Q5:
+	To answer this question would depend on the definition of "more likely to succeed".  I created a bot with a simple learning algorithm which can defeat any bot whose moves are based on some pattern.  It has even shown to work against most humans, whose move selection strategies are more complex but ultimately tend to fall into some pattern of logic as well.  In that sense, it is possible design a strategy that is better than average.  But the very nature of RandomBot shows that it is not possible to design any single strategy that is definitively better than all other strategies.  Except cheater bot.  Cheaterbot always wins.  But he cheats.
+
+Q6:
+	I liked the fact that Python is whitespace/tab delimited.  It forced the code to be kept clean and indented properly, the way it ultimately should always look but doesnt sometimes because lazy programmers are lazy.  It made me realize how often i really just pour out blocks of code, and then go back and fix the formatting later, instead of doing it properly in the first place.  Doesnt work in Python.
+
+Q7:
+	I hated the fact that Python is whitespace/tab delimited.  I typically use whitespaces to indent my code, but i did all of the programs for this project in Notepad++, which randomly (and inconsistently) converts/adds tabs instead of whitespace, which often lead to problems due to Pythons hyper-sensetivity to this space.  Apparently it doesnt like it if you have instances of both whitespace and tabs in the same file.  Additionally, the Python interpreter seems to factor comment blocks into its calculations, which seems extremely counter-intuitive.  I commented out a block of code which didnt work that started at one indentation and ended at a different indentation, and attempted to re-write that section in a different way, and it totally blew chunks when it reached this section due to the indentation.  I ultimately had to remove the comment block entirely to make it work.
+
+Q8:
+	I enjoyed this lab immensely, perhaps going a bit too far and spending way way too much time on it.  Python was a nice blend of OO and Imperative programming.  I really enjoyed designing the players and the classes, though it was really weird coding in Notepad++ instead of an IDE.  Which is ironic, because when i first started using IDEs like 5 years ago, it was really weird not coding in Notepad.
+
+Q9:
+	Way too many.  20+
+
+Q10:
+	It would definitely be good for projects which could benefit from some OO class design for some pieces, but dont necessarily require busting out full Java projects.  The Python interpreter is also great for throwing together small programs that arent worth keeping.
