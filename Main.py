@@ -20,7 +20,7 @@ import sys
 # Main function script.  Not sure if this must be made into a Main-type function, or if an imperative-esque script is sufficient enough for this, but im doing it this way anyway.
 
 # Define a console clear function.  It just makes the game look so much cleaner!  Although, it also seems to create some weird behavior if the game is viewed anywhere but a windows command line.
-clear = lambda: os.system('cls')
+clear = lambda: os.system('clear')
 
 
 # Define some global variables

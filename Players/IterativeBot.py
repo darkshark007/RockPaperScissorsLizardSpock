@@ -1,5 +1,5 @@
 from Players.Player import *
-from Lib.random import Random
+from random import Random
 
 class IterativeBot(Player):
 
